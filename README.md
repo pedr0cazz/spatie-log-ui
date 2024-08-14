@@ -1,6 +1,3 @@
-
-
-```markdown
 # Spatie Log UI
 
 [![Latest Stable Version](https://poser.pugx.org/pedr0cazz/spatie-log-ui/v/stable)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
