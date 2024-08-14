@@ -1,6 +1,6 @@
 # Spatie Log UI
 
-[![Latest Stable Version](https://poser.pugx.org/pedr0cazz/spatie-log-ui/v/stable)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
+[![Latest Stable Version](https://poser.pugx.org/pedr0cazz/spatie-log-ui/version)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
 [![Total Downloads](https://poser.pugx.org/pedr0cazz/spatie-log-ui/downloads)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
 [![License](https://poser.pugx.org/pedr0cazz/spatie-log-ui/license)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
 
