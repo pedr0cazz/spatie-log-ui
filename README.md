@@ -1,6 +1,4 @@
-Sure! Here's a structured and informative `README.md` file for your `spatie-log-ui` package. This file is meant to guide users on what the package does, how to install it, and how to use it.
 
-### README.md
 
 ```markdown
 # Spatie Log UI
@@ -88,7 +86,7 @@ If you encounter any issues or have any questions, please open an issue on [GitH
 ## Acknowledgements
 
 This package is built on top of the excellent [Spatie Laravel Activitylog](https://github.com/spatie/laravel-activitylog) package. A big thank you to the Spatie team for their hard work and dedication to the Laravel community.
-```
+
 
 ### Key Sections:
 
@@ -118,4 +116,4 @@ This package is built on top of the excellent [Spatie Laravel Activitylog](https
 
 3. **Review**: After pushing, you can view the README on your GitHub repository to ensure it displays correctly.
 
-This `README.md` will provide a clear and professional overview of your package, making it easier for others to understand, install, and use.
+```
