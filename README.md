@@ -99,18 +99,4 @@ This package is built on top of the excellent [Spatie Laravel Activitylog](https
 10. **Support**: Directs users to GitHub for support.
 11. **Acknowledgements**: Credits the Spatie team for their underlying package.
 
-### Next Steps:
 
-1. **Add the README to Your Repository**: Place this `README.md` file in the root directory of your package.
-   
-2. **Commit the README**:
-
-    ```bash
-    git add README.md
-    git commit -m "Add README"
-    git push origin main
-    ```
-
-3. **Review**: After pushing, you can view the README on your GitHub repository to ensure it displays correctly.
-
-```
