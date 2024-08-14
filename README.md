@@ -12,6 +12,9 @@ A simple Laravel package that provides a user interface to view and manage activ
 - **Search and Filter**: Easily search and filter logs by various criteria, such as action type, subject ID, causer email, etc.
 - **Responsive UI**: Built with Bootstrap 5, ensuring a responsive and modern interface.
 
+![image](https://github.com/user-attachments/assets/6f2c3e96-0a43-439c-9b83-1c3abd00cda2)
+![image](https://github.com/user-attachments/assets/8bb10e71-7847-40a9-9c02-6d66def7fe51)
+
 ## Requirements
 
 - PHP 8.2 or higher
