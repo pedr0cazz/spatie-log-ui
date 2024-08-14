@@ -212,6 +212,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 
     <script>
+        function format(logs) {
+            let html = '<table id="log2" class="table table-bordered log-table">';
+            if (logs.properties.old) {
+                const old = logs.properties.old;
+                const new_ = logs.properties.attributes;
+                for (const key in old) {
+                    if (logs.event === 'deleted') {
+                        // Handle deleted action
+                        html += `<tr>
+                        <td><strong>${key}</strong></td>
+                        <td colspan="2" class="bg-danger text-white"><del>${old[key]}</del> (Deleted)</td>
+                    </tr>`;
+                    } else if (old[key] !== new_[key]) {
+                        // Handle updated action
+                        html += `<tr>
+                        <td><strong>${key}</strong></td>
+                        <td class="bg-danger text-white"><del>${old[key]}</del></td>
+                        <td class="bg-success text-white"><ins>${new_[key]}</ins></td>
+                    </tr>`;
+                    } else {
+                        // Handle unchanged action
+                        html += `<tr>
+                        <td><strong>${key}</strong></td>
+                        <td colspan="2">${old[key]}</td>
+                    </tr>`;
+                    }
+                }
+            } else {
+                const new_ = logs.properties.attributes;
+                for (const key in new_) {
+                    html += `<tr>
+                    <td><strong>${key}</strong></td>
+                    <td colspan="2">${new_[key]}</td>
+                </tr>`;
+                }
+            }
+            html += '</table>';
+            return html;
+        }
+
+
         $(document).ready(function() {
             const url = "{{ route('spatie_log_ui.get_ajax_log_data') }}";
 
@@ -228,16 +269,54 @@
                 processing: true,
                 serverSide: true,
                 ajax: url,
-                columns: [
-                    { data: 'id', visible: true, searchable: true, orderable: true },
-                    { data: 'description', render: renderDescription, searchable: true, orderable: true },
-                    { data: 'subject_id', searchable: true, orderable: true },
-                    { data: 'subject_type', searchable: true, orderable: true },
-                    { data: 'causer_id', searchable: true, orderable: true },
-                    { data: 'causer_type', searchable: true, orderable: true },
-                    { data: 'created_at', searchable: true, orderable: true },
-                    { data: 'batch_uuid', searchable: true, orderable: true },
-                    { data: 'actions', orderable: false, searchable: false, render: renderActions }
+                columns: [{
+                        data: 'id',
+                        visible: true,
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'description',
+                        render: renderDescription,
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'subject_id',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'subject_type',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'causer_id',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'causer_type',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'created_at',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'batch_uuid',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'actions',
+                        orderable: false,
+                        searchable: false,
+                        render: renderActions
+                    }
                 ],
                 order: [
                     [6, "desc"] // Default ordering by 'created_at' column in descending order
