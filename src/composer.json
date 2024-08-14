@@ -1,0 +1,23 @@
+{
+    "name": "activity-log-spatie-ui/spatie-log-ui",
+    "description": "A simple package to view Spatie activity logs in a UI",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ActivityLogSpatieUi\\SpatieLogUi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ActivityLogSpatieUi\\SpatieLogUi\\SpatieLogUiServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "spatie/laravel-activitylog": "^4.0",
+        "yajra/laravel-datatables-oracle": "^9.0"
+    }
+}
