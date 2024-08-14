@@ -1,6 +1,6 @@
 <?php
 
-namespace ActivityLogSpatieUi\SpatieLogUi\Controllers;
+namespace Pedr0cazz\SpatieLogUi\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

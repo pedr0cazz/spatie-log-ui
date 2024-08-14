@@ -1,6 +1,6 @@
 <?php
 
-use ActivityLogSpatieUi\SpatieLogUi\Controllers\ActivityController;
+use Pedr0cazz\SpatieLogUi\Controllers\ActivityController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth', 'verified'])->group(function () {

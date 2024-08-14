@@ -1,6 +1,6 @@
 <?php
 
-namespace ActivityLogSpatieUi\SpatieLogUi;
+namespace Pedr0cazz\SpatieLogUi;
 
 use Illuminate\Support\ServiceProvider;
 
