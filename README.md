@@ -1,8 +1,3 @@
-Sure! Here's a structured and informative `README.md` file for your `spatie-log-ui` package. This file is meant to guide users on what the package does, how to install it, and how to use it.
-
-### README.md
-
-```markdown
 # Spatie Log UI
 
 [![Latest Stable Version](https://poser.pugx.org/pedr0cazz/spatie-log-ui/v/stable)](https://packagist.org/packages/pedr0cazz/spatie-log-ui)
@@ -88,7 +83,7 @@ If you encounter any issues or have any questions, please open an issue on [GitH
 ## Acknowledgements
 
 This package is built on top of the excellent [Spatie Laravel Activitylog](https://github.com/spatie/laravel-activitylog) package. A big thank you to the Spatie team for their hard work and dedication to the Laravel community.
-```
+
 
 ### Key Sections:
 
@@ -104,18 +99,4 @@ This package is built on top of the excellent [Spatie Laravel Activitylog](https
 10. **Support**: Directs users to GitHub for support.
 11. **Acknowledgements**: Credits the Spatie team for their underlying package.
 
-### Next Steps:
 
-1. **Add the README to Your Repository**: Place this `README.md` file in the root directory of your package.
-   
-2. **Commit the README**:
-
-    ```bash
-    git add README.md
-    git commit -m "Add README"
-    git push origin main
-    ```
-
-3. **Review**: After pushing, you can view the README on your GitHub repository to ensure it displays correctly.
-
-This `README.md` will provide a clear and professional overview of your package, making it easier for others to understand, install, and use.
