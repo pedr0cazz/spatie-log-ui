@@ -42,16 +42,16 @@ class ActivityController extends Controller
     {
         switch ($state) {
             case 'updated':
-                return 'Actualizado';
+                return 'Updated';
                 break;
             case 'created':
-                return 'Criado';
+                return 'Created';
                 break;
             case 'deleted':
-                return 'Apagado';
+                return 'Deleted';
                 break;
             default:
-                return 'Não definido';
+                return 'Unknown';
                 break;
         }
     }
@@ -157,7 +157,7 @@ class ActivityController extends Controller
                 return $record->batch_uuid;
             })
             ->addColumn('actions', function ($record) {
-                return "<button id='show' data-id='{$record->id}' class='text-primary'>Detalhes</button>";
+                return "<button id='show' data-id='{$record->id}' class='text-primary'>Details</button>";
             })
             ->rawColumns(['actions']) // Ensure HTML rendering
             ->toJson();

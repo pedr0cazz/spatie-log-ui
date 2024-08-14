@@ -373,9 +373,9 @@
 
             function renderDescription(data) {
                 let cssClass = '';
-                if (data === 'Criado') cssClass = 'bg-created';
-                if (data === 'Actualizado') cssClass = 'bg-updated';
-                if (data === 'Apagado') cssClass = 'bg-deleted';
+                if (data === 'Created') cssClass = 'bg-created';
+                if (data === 'Updated') cssClass = 'bg-updated';
+                if (data === 'Deleted') cssClass = 'bg-deleted';
                 return `<span class="badge ${cssClass}">${data}</span>`;
             }
 
