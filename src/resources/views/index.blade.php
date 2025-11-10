@@ -3,6 +3,7 @@
     <!-- Styles Bootstrap 5.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+
     <style>
         :root {
             --primary-color: #00a69f !important;
@@ -374,8 +375,9 @@
             function renderDescription(data) {
                 let cssClass = '';
                 if (data === 'Created') cssClass = 'bg-created';
-                if (data === 'Updated') cssClass = 'bg-updated';
-                if (data === 'Deleted') cssClass = 'bg-deleted';
+                else if (data === 'Updated') cssClass = 'bg-updated';
+                else if (data === 'Deleted') cssClass = 'bg-deleted';
+                else cssClass = 'bg-secondary';
                 return `<span class="badge ${cssClass}">${data}</span>`;
             }
 

@@ -126,8 +126,11 @@ class ActivityController extends Controller
                 return $record->id;
             })
             ->addColumn('description', function ($record) {
-                return self::stateToText($record->description);
+                return in_array(strtolower($record->description), ['created', 'updated', 'deleted'])
+                    ? self::stateToText($record->description)
+                    : $record->description;
             })
+
             ->addColumn('subject_type', function ($record) {
                 $subjectTypeShort = $record->subject_type ? explode('\\', $record->subject_type) : [];
 
